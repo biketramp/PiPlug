@@ -1,0 +1,10 @@
+[Unit]
+Description=piplug
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/piplug.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
